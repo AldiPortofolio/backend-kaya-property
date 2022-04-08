@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+    <style>
+        .btn {
+            background-color: #cda33a !important;
+            color: white !important;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            height: 48px;
+            line-height: 30px;
+            padding: 8px 23px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .d-flex {
+            flex-direction: column;
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+        <p>
+        Hello {{.Name}}
+        </p>
+        <span>Forgot your password?</span><br>
+        <span>We received a request to reset password for your account</span>
+        <br/>
+        <br/>
+        <span>To reset your password, click on the below:</span>
+        <br/>
+         <a href="{{.URL}}" style="text-decoration: none;"><button class="btn">Reset password</button></a>
+        <br/>
+        <br/>
+        <span>Or copy and paste the URL into your browser:</span>
+        <br/>
+        <a href="{{.URL}}" style="text-decoration: none;">{{.URL}}</a>
+</body>
+
+</html>
